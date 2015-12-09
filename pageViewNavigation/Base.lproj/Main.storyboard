@@ -16,10 +16,25 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bg4-vA-O0c">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <animations/>
+                            </scrollView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bg4-vA-O0c" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="TQP-eB-dpm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Bg4-vA-O0c" secondAttribute="bottom" id="cfo-yQ-wDL"/>
+                            <constraint firstItem="Bg4-vA-O0c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eQO-wZ-XWj"/>
+                            <constraint firstAttribute="trailing" secondItem="Bg4-vA-O0c" secondAttribute="trailing" id="mor-B7-LEg"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Bg4-vA-O0c" id="EbG-5B-hme"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
